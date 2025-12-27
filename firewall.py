@@ -11,7 +11,7 @@ from win10toast import ToastNotifier
 
 # --- الإعدادات الاحترافية ---
 THRESHOLD = 40  # عدد الحزم في الثانية المسموح بها
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1454561024207224985/NH5GvQDMFqA0xfqaJQKNi6Yz7WAs3n8KDedWkWuKqN8VK1Xtbjb6RVz_f7Uf9aLIGh0s" # استبدل هذا بالرابط الخاص بك
+DISCORD_WEBHOOK_URL = "" # استبدل هذا بالرابط الخاص بك
 
 blocked_ips = set()
 packet_count = defaultdict(int)
@@ -163,4 +163,5 @@ if __name__ == "__main__":
         # بدء مراقبة الشبكة (Store=0 لضمان عدم استهلاك الذاكرة)
         sniff(filter="ip", prn=packet_callback, store=0)
     except KeyboardInterrupt:
+
         sys.exit(0)

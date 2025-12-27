@@ -28,7 +28,7 @@ Clone & Install Dependencies:
 
 Bash
 
-git clone https://github.com/your-username/Sentinel-X.git
+git clone https://github.com/moh-mme/Sentinel-X.git
 cd Sentinel-X
 pip install scapy requests win10toast
 Configuration: Open main.py and replace DISCORD_WEBHOOK_URL with your team's webhook link.
